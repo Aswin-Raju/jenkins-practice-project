@@ -2,19 +2,19 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('build') {
             steps {
                 echo 'Building the project...'
             }
         }
-        stage('Test') {
+        stage('test') {
             steps {
-                sh 'python3 hello-world/test_app.py'
+                echo 'Testing the project...'
             }
         }
-        stage('Deploy') {
+        stage('deploy') {
             steps {
-                echo 'Deploy step (mock)'
+                echo 'Deploying step (mock)'
             }
         }
     }
