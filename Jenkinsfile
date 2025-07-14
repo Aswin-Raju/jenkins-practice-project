@@ -1,8 +1,3 @@
-
-
-#### 2. **`Jenkinsfile`** (basic declarative pipeline)
-
-```groovy
 pipeline {
     agent any
 
